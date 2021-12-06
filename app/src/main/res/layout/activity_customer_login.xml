@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding = "16dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id = "@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/textOfEmail"
+
+            android:ems="30"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="30"
+            android:hint="@string/textOfPassword"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/customerLogin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/customerLogin"
+            android:onClick="customerLogin"
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Don't hava an account"
+            />
+
+        <Button
+            android:id="@+id/customerRegister"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/customerRegister"
+            android:onClick="onCustomerRegister"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
